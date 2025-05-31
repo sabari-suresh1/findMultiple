@@ -7,7 +7,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/findMultiple', (req, res) => {
-  res.send('need to inmplement')
+
+    let n1 = parseInt(req.query.a);
+    let n2 = parseInt(req.query.b);
+  res.send("Multiple of " + a + " and " + b + " is " + (n1*n2) )
 })
 
 app.listen(port, () => {
