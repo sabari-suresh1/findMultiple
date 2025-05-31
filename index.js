@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
 
 app.get('/findMultiple', (req, res) => {
 
-    let n1 = parseInt(req.query.a);
-    let n2 = parseInt(req.query.b);
+    let n1 = parseInt(req.query.n1);
+    let n2 = parseInt(req.query.n2);
   res.send("Multiple of " + n1 + " and " +  n2 + " is " + (n1*n2) )
 })
 
